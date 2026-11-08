@@ -23,8 +23,7 @@ extensions.configure<ApplicationExtension> {
 		buildConfigField("String", "GIT_HASH", "\"${getGitHash()}\"")
 
 		externalNativeBuild {
-			val engineRoot = projectDir.p
-arentFile.parent
+			val engineRoot = projectDir.parentFile.parent
 
 			experimentalProperties["ninja.abiFilters"] = setOf("armeabi-v7a", "arm64-v8a", "x86")
 			experimentalProperties["ninja.path"] = File(engineRoot, "wscript").path
