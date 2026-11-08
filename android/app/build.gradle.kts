@@ -14,7 +14,7 @@ extensions.configure<ApplicationExtension> {
 	compileSdk = 35
 
 	defaultConfig {
-		applicationId = "su.xash.engine"
+		applicationId = "com.wiler.paranoia"
 		versionName = "0.21-" + getGitHash()
 		versionCode = getBuildNum()
 		minSdk = 21
@@ -23,7 +23,8 @@ extensions.configure<ApplicationExtension> {
 		buildConfigField("String", "GIT_HASH", "\"${getGitHash()}\"")
 
 		externalNativeBuild {
-			val engineRoot = projectDir.parentFile.parent
+			val engineRoot = projectDir.p
+arentFile.parent
 
 			experimentalProperties["ninja.abiFilters"] = setOf("armeabi-v7a", "arm64-v8a", "x86")
 			experimentalProperties["ninja.path"] = File(engineRoot, "wscript").path
