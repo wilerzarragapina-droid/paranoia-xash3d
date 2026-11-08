@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name" translatable="false">Xash3D FWGS</string>
+	<string name="app_name" translatable="false">Paranoia</string>
 	<string name="library">Library</string>
 	<string name="dedicated_server">Dedicated</string>
 	<string name="app_settings">Settings</string>
