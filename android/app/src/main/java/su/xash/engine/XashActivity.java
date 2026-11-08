@@ -212,7 +212,7 @@ public class XashActivity extends SDLActivity {
 		recordLaunchInfo();
 
 		String gamedir = getIntent().getStringExtra("gamedir");
-		if (gamedir == null) gamedir = "valve";
+		if (gamedir == null) gamedir = "paranoia";
 		nativeSetenv("XASH3D_GAME", gamedir);
 
 		String gamelibdir = getIntent().getStringExtra("gamelibdir");
