@@ -39,7 +39,7 @@ class Game(val ctx: Context, val basedir: File, val gameInfoFile: File, previous
 	// for any other game that's not hl this string must be replaced with your
 	// main game directory
 	// mods always use -game command line parameter
-	var defaultGameDir = "valve"
+	var defaultGameDir = "paranoia"
 
 	private val pref = ctx.getSharedPreferences(basedir.name, Context.MODE_PRIVATE)
 
